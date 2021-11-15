@@ -37270,6 +37270,15 @@ module.exports = function(module) {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
+document.querySelector('.image-picker input').addEventListener('change', function (e) {
+  var input = e.target;
+  var reader = new FileReader();
+
+  reader.onload = function (e) {
+    input.closest('.image-picker').querySelector('img').src = e.target.result;
+  };
+});
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
@@ -37335,8 +37344,8 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /var/www/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /var/www/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/freedom1213/melpit-workspace/melpit/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/freedom1213/melpit-workspace/melpit/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
