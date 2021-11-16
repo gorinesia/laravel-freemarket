@@ -7,4 +7,5 @@ document.querySelector('.image-picker input')
         reader.onload = (e) => {
             input.closest('.image-picker').querySelector('img').src = e.target.result
         };
+        reader.readAsDataURL(input.files[0]);
     });
