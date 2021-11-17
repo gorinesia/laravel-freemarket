@@ -29,7 +29,7 @@
                             </a>
                             <a  class="dropdown-item" href="{{ route('logout') }}"
                                 onclick="event.preventDefault();
-                                document.getElementById('logout-form').submit();">
+                                    document.getElementById('logout-form').submit();">
                                 <i class="fas fa-sign-out-alt text-left" style="width: 30px;"></i>ログアウト
                             </a>
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
