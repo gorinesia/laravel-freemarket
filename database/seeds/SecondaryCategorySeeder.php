@@ -50,7 +50,7 @@ class SecondaryCategorySeeder extends Seeder
         ]);
         factory(SecondaryCategory::class)->create([
             'id' => 7,
-            'name' => 'ベビー服（女の子用）',
+            'name' => 'ベビー服（男の子用）',
             'sort_no' => 7,
             'primary_category_id' => 3,
         ]);
