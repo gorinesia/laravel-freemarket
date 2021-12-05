@@ -98,7 +98,7 @@ class ItemsController extends Controller
 
         try {
             $seller = User::lockForUpdate()->find($sellerID);
-            $item = User::lockForUpdate()->find($itemID);
+            $item = Item::lockForUpdate()->find($itemID);
 
             if ($item->isStateBought) {
                 throw new \Exception('多重決済');
